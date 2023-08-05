@@ -112,29 +112,35 @@ const result = nonEmpty`{{Weapon
 
 |s1_name=${SKILL_ONE_NAME}
 |s1_icon=${SKILL_ONE_ICON}
+|ens1_desc=${SKILL_ONE_DESC}
 |s1_desc=${SKILL_ONE_DESC}
 |s1_lvl=
 |s1_4s_name=
 |s1_4s_icon=
 |s1_4s_lvl=
+|ens1_4s_desc=
 |s1_4s_desc=
 
 |s2_name=${SKILL_TWO_NAME}
 |s2_icon=${SKILL_TWO_ICON}
+|ens2_desc=${SKILL_TWO_DESC}
 |s2_desc=${SKILL_TWO_DESC}
-|s2_lvl= ${SKILL_TWO_LEVELREQ}
+|s2_lvl=${SKILL_TWO_LEVELREQ}
 |s2_4s_name=
 |s2_4s_icon=
 |s2_4s_lvl=
+|ens2_4s_desc=
 |s2_4s_desc=
 
 |s3_name=${SKILL_THREE_NAME}
 |s3_icon=${SKILL_THREE_ICON}
+|ens3_desc=${SKILL_THREE_DESC}
 |s3_desc=${SKILL_THREE_DESC}
 |s3_lvl=${SKILL_THREE_LEVELREQ}
 |s3_4s_name=
 |s3_4s_icon=
 |s3_4s_lvl=
+|ens3_4s_desc=
 |s3_4s_desc=
 
 |reduce_advice=
