@@ -56,16 +56,19 @@ const MAX_ATK = document.querySelector(".prt-max-atk .txt-atk-value").textConten
 const OUGI_NAME = document.querySelector(".prt-detail-special .name-m").textContent;
 const OUGI_DESC = document.querySelector(".prt-detail-special .comment-m").textContent;
 
-const SKILL_ONE_NAME = document.querySelector(".prt-detail-support > .prt-box:nth-child(2) > .name-m")?.textContent;
-const SKILL_ONE_DESC = document.querySelector(".prt-detail-support > .prt-box:nth-child(2) > .comment-m")?.textContent;
-
-const SKILL_TWO_NAME = document.querySelector(".prt-detail-support > .prt-box:nth-child(3) > .name-m")?.textContent;
-const SKILL_TWO_DESC = document.querySelector(".prt-detail-support > .prt-box:nth-child(3) > .comment-m")?.textContent;
-
-const SKILL_THREE_NAME = document.querySelector(".prt-detail-support > .prt-box:nth-child(4) > .name-m")?.textContent;
-const SKILL_THREE_DESC = document.querySelector(".prt-detail-support > .prt-box:nth-child(4) > .comment-m")?.textContent;
+const skill_flexboxes = document.querySelectorAll(".prt-detail-skill .prt-box-flexible");
+const skill_info = (skill) => {
+  const NAME = skill?.querySelector(".name-m")?.textContent;
+  const DESC = skill?.querySelector(".comment-m")?.textContent;
+  const LEVELREQ = skill?.querySelector(".txt-condition-level")?.textContent.match(/\d+$/)?.[0];
+  return {NAME, ICON, DESC, LEVELREQ};
+};
+const SKILL_ONE = skill_info(skill_flexboxes[0]);
+const SKILL_TWO = skill_info(skill_flexboxes[1]);
+const SKILL_THREE = skill_info(skill_flexboxes[2]);
 
 const FLAVOR = document.querySelector(".prt-flavor").textContent.trim();
+
 const result = nonEmpty`
 |jpname=${NAME}
 
@@ -75,18 +78,18 @@ const result = nonEmpty`
 |jpougi=${OUGI_DESC}
 |jpougi_4s=
 
-|jps1_name=${SKILL_ONE_NAME}
-|jps1_desc=${SKILL_ONE_DESC}
+|jps1_name=${SKILL_ONE.NAME}
+|jps1_desc=${SKILL_ONE.DESC}
 |jps1_4s_name=
 |jps1_4s_desc=
 
-|jps2_name=${SKILL_TWO_NAME}
-|jps2_desc=${SKILL_TWO_DESC}
+|jps2_name=${SKILL_TWO.NAME}
+|jps2_desc=${SKILL_TWO.DESC}
 |jps2_4s_name=
 |jps2_4s_desc=
 
-|jps3_name=${SKILL_THREE_NAME}
-|jps3_desc=${SKILL_THREE_DESC}
+|jps3_name=${SKILL_THREE.NAME}
+|jps3_desc=${SKILL_THREE.DESC}
 |jps3_4s_name=
 |jps3_4s_desc=
 
