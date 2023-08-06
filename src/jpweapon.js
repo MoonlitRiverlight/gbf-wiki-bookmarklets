@@ -15,12 +15,12 @@ const NAME = (() => {
 })();
 
 const RARITY = (() => {
-  if (document.querySelector(".prt-rarity-4")) return "ssr";
-  if (document.querySelector(".prt-rarity-3")) return "sr";
-  if (document.querySelector(".prt-rarity-2")) return "r";
-  if (document.querySelector(".prt-rarity-4-large")) return "ssr";
-  if (document.querySelector(".prt-rarity-3-large")) return "sr";
-  if (document.querySelector(".prt-rarity-2-large")) return "r";
+  if (document.querySelector(".prt-rarity-4")) return "SSR";
+  if (document.querySelector(".prt-rarity-3")) return "SR";
+  if (document.querySelector(".prt-rarity-2")) return "R";
+  if (document.querySelector(".prt-rarity-4-large")) return "SSR";
+  if (document.querySelector(".prt-rarity-3-large")) return "SR";
+  if (document.querySelector(".prt-rarity-2-large")) return "R";
   return "?";
 })();
 
