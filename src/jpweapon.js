@@ -66,7 +66,7 @@ const result = nonEmpty`{{Weapon
 |jps1_4s_desc=
 
 |jps2_name=${SKILL_TWO_NAME}
-|jps2_desc=${SKILL_TWO_DESC}}
+|jps2_desc=${SKILL_TWO_DESC}
 |jps2_4s_name=
 |jps2_4s_desc=
 
