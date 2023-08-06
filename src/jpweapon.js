@@ -60,8 +60,7 @@ const skill_flexboxes = document.querySelectorAll(".prt-detail-skill .prt-box-fl
 const skill_info = (skill) => {
   const NAME = skill?.querySelector(".name-m")?.textContent;
   const DESC = skill?.querySelector(".comment-m")?.textContent;
-  const LEVELREQ = skill?.querySelector(".txt-condition-level")?.textContent.match(/\d+$/)?.[0];
-  return {NAME, ICON, DESC, LEVELREQ};
+  return {NAME, DESC};
 };
 const SKILL_ONE = skill_info(skill_flexboxes[0]);
 const SKILL_TWO = skill_info(skill_flexboxes[1]);
