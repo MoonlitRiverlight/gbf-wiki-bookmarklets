@@ -38,7 +38,8 @@ const FLAVOR = document.querySelector(".prt-flavor").textContent.trim();
 
 const result = nonEmpty`
 |jpname=${NAME}
-|vajp=${VOICE_ACTOR}
+
+|jpva=${VOICE_ACTOR}
 
 |link_jpwiki=召喚石/${NAME}+%28${RARITY}%29
 
