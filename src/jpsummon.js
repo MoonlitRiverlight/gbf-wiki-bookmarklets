@@ -36,7 +36,7 @@ const SUB_AURA_DESC = document.querySelector(".prt-detail-protection .prt-aura-d
 
 const FLAVOR = document.querySelector(".prt-flavor").textContent.trim();
 
-const result = nonEmpty`{{Summon
+const result = nonEmpty`
 |jpname=${NAME}
 |vajp=${VOICE_ACTOR}
 
@@ -60,12 +60,6 @@ const result = nonEmpty`{{Summon
 |jpcall_flb=
 
 |jpflavor=${FLAVOR}
-}}
-
-==Gameplay Notes==
-
-==References==
-
 `;
 
 copyToClipboard(result);
