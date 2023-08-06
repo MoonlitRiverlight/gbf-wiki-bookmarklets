@@ -41,10 +41,7 @@ const SKILL_THREE_ICON = document.querySelector(".prt-detail-support > .prt-box:
 
 const FLAVOR = document.querySelector(".prt-flavor").textContent.trim();
 
-const result = nonEmpty`{{Weapon
-|id=${ID}
-|series=
-|jpname=${NAME}
+const result = nonEmpty`|jpname=${NAME}
 
 |link_jpwiki=武器/${NAME}+%28${RARITY}%29
 
@@ -76,7 +73,6 @@ const result = nonEmpty`{{Weapon
 |jps3_4s_desc=
 
 |jpflavor=${FLAVOR}
-}}
 `;
 
 copyToClipboard(result);
